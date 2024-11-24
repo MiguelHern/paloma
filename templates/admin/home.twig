@@ -4,12 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Home</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- Asegúrate de incluir Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="bg-blue-500 text-white p-4">
-    ¡Adios, mundo con Tailwind CSS!
-</div>
+<body class="bg-gray-100">
+  <div class="flex h-screen">
+    <!-- Left Pane -->
+    <div class="hidden lg:flex flex-1 items-center justify-center bg-white">
+      <div class="max-w-md text-center">
+        <img src="/logoCheli.webp" alt="Illustration" class="w-full h-auto mb-6">
+        <h1 class="text-2xl font-bold text-gray-800">Bienvenido trabajador</h1>
+        <p class="mt-4 text-gray-600">Si todos avanzamos juntos, el éxito llegará solo.</p>
+      </div>
+    </div>
+
+    <!-- Right Pane -->
+    <div class="flex-1 flex items-center justify-center bg-gray-200">
+      <div class="w-full max-w-md px-6 py-8 bg-white shadow-md rounded-md">
+        <h2 class="text-xl font-bold text-gray-800 text-center">Login</h2>
+        <form class="mt-6">
+          <div class="mb-4">
+            <label for="email" class="block text-gray-600 font-medium">Email</label>
+            <input type="email" id="email" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200 focus:outline-none">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-gray-600 font-medium">Password</label>
+            <input type="password" id="password" class="w-full mt-2 px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-blue-200 focus:outline-none">
+          </div>
+          <button type="submit" class="w-full mt-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600">Ingresa</button>
+        </form>
+        <div class="p-2">
+        <p>
+            ¿Olvidaste tu contraseña? 
+            <a href="" style="text-decoration: underline; color: blue;">
+                Haz clic aquí
+            </a>
+            para restablecerla.
+        </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
